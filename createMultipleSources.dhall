@@ -2,11 +2,11 @@ let concatMap = https://raw.githubusercontent.com/dhall-lang/Prelude/35deff0d41f
 in
 let map = https://raw.githubusercontent.com/dhall-lang/dhall-lang/0a7f596d03b3ea760a96a8e03935f4baa64274e1/Prelude/List/map
 in
-let sourceFunction = ./BuildNeededSourcesFunction.dhall  -- https://raw.githubusercontent.com/plow-technologies/virtual-parameter-templates/master/BuildNeededSourcesFunction.dhall
+let sourceFunction = https://raw.githubusercontent.com/plow-technologies/multiple-sources-import/master/BuildNeededSourcesFunction.dhall
 in
-let UnrolledSource = ./UnrolledSource.dhall -- https://raw.githubusercontent.com/plow-technologies/virtual-parameter-templates/master/UnrolledSource.dhall
+let UnrolledSource = https://raw.githubusercontent.com/plow-technologies/multiple-sources-import/master/UnrolledSource.dhall
 in
-let NeededSources = ./NeededSources.dhall -- https://raw.githubusercontent.com/plow-technologies/virtual-parameter-templates/master/NeededSources.dhall
+let NeededSources = https://raw.githubusercontent.com/plow-technologies/multiple-sources-import/master/NeededSources.dhall
 in
 let VirtualParameter =  https://raw.githubusercontent.com/plow-technologies/virtual-parameter-templates/master/VirtualParameter.dhall
 in let sources = [
