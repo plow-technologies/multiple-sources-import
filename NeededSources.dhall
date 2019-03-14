@@ -1,5 +1,13 @@
 let VpidSource = ./VpidSource.dhall
 in { yesterdaysVolume:VpidSource,
+    rateMscfpd : VpidSource,
+    historicOnTime          : VpidSource,
+	historicOffTime         : VpidSource,
+	offTimeSetpoint         : VpidSource,
+	afterflowTimeSetpoint   : VpidSource,
+	minOffTime              : VpidSource,
+	fastArrivalTimeSetpoint : VpidSource,
+	slowArrivalTimeSetpoint : VpidSource,
     historicFastArrivalsCount:VpidSource,
 	historicGoodArrivalsCount:VpidSource,
 	historicSlowArrivalsCount:VpidSource,

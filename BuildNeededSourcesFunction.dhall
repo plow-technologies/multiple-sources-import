@@ -1,4 +1,4 @@
-let VpidSource = https://raw.githubusercontent.com/plow-technologies/virtual-parameter-templates/master/VpidSource.dhall
+let VpidSource = ./VpidSource.dhall
 
 in let NeededSources = ./NeededSources.dhall
 in let VirtualParameter = https://raw.githubusercontent.com/plow-technologies/virtual-parameter-templates/master/VirtualParameter.dhall
@@ -571,9 +571,9 @@ in let buildWapitiSet = \(neededSources:NeededSources) -> [
           +170
       }
   }
-  ]:List VirtualParameter
+  ]: List VirtualParameter
 
-in let UnrolledSource = https://raw.githubusercontent.com/plow-technologies/virtual-parameter-templates/master/UnrolledSource.dhall
+in let UnrolledSource = ./UnrolledSource.dhall
 				   
 in let buildNeededSources = \(unrolled:UnrolledSource) -> let
   buildVpid = \(p:Integer) -> { company = unrolled.companyId,
