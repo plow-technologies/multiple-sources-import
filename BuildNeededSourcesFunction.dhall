@@ -1,6 +1,6 @@
 let VpidSource = https://raw.githubusercontent.com/plow-technologies/virtual-parameter-templates/master/VpidSource.dhall
 
-in let NeededSources = https://raw.githubusercontent.com/plow-technologies/virtual-parameter-templates/master/NeededSources.dhall	
+in let NeededSources = https://raw.githubusercontent.com/plow-technologies/virtual-parameter-templates/master/NeededSources.dhall
 in let VirtualParameter = https://raw.githubusercontent.com/plow-technologies/virtual-parameter-templates/master/VirtualParameter.dhall
 					 
 in let buildWapitiSet = \(neededSources:NeededSources) -> [ 
@@ -589,7 +589,7 @@ in let buildNeededSources = \(unrolled:UnrolledSource) -> let
 	   afterflowTimeSetpoint     = buildVpid unrolled.afterflowTimeSetpoint,
 	   minOffTime                = buildVpid unrolled.minOffTime,
 	   fastArrivalTimeSetpoint   = buildVpid unrolled.fastArrivalTimeSetpoint,
-	   slowArrivalTimeSetpoint   = buildVpid unrolled.slowArrivalTimeSetpoint,
+	   slowArrivalTimeSetpoint   = buildVpid unrolled.slowArrivalTimeSetpoint
        historicFastArrivalsCount = buildVpid unrolled.historicFastArrivalsCount,
 	   historicGoodArrivalsCount = buildVpid unrolled.historicGoodArrivalsCount,
 	   historicSlowArrivalsCount = buildVpid unrolled.historicSlowArrivalsCount,
